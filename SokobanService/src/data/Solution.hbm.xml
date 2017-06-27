@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping 3.0DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="data">
+   <class name="Solution" table="Solutions">
+   
+    	  <meta attribute="class-description">
+      		   This class contains level solution details. 
+     	  </meta>
+     	
+   		 <id name="levelHash" type="int" column="levelHash"></id>
+   		 
+    	<property name="levelName" column="levelName" type="string"/>
+    	<property name="solution" column="solution" type="string"/>
+      
+   </class>
+</hibernate-mapping>
